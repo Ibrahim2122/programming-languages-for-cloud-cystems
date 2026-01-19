@@ -4,8 +4,17 @@ let b = 123;
 
 const c = true;
 
-console.table({
-  a: typeof a,
-  b: typeof b,
-  c: typeof c,
-});
+console.table([
+  {
+    type: typeof a,
+    val: a,
+  },
+  {
+    type: typeof b,
+    val: b,
+  },
+  {
+    type: typeof c,
+    val: c,
+  },
+]);
