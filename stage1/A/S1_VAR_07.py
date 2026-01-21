@@ -1,0 +1,23 @@
+# S1_VAR_07.py
+
+import math
+
+
+def main():
+    nan1 = float("nan")
+
+    try:
+        nan2 = 0.0 / 0.0
+    except ZeroDivisionError:
+        nan2 = float("nan")
+
+    print("nan1 == nan1:", nan1 == nan1)
+    print("nan2 == nan2:", nan2 == nan2)
+    print("nan1 == nan2:", nan1 == nan2)
+
+    print("math.isnan(nan1):", math.isnan(nan1))
+    print("math.isnan(nan2):", math.isnan(nan2))
+
+
+if __name__ == "__main__":
+    main()
